@@ -1,0 +1,11 @@
+<view class="mycontainer">
+  <text>欢迎引导页面（一个字测你单身原因）</text>
+
+  <block wx:for="{{defaultResion}}" data-item="item">
+    <view class='guide-text-parent' >
+      <text class='guide-text-default'>{{item}}</text>
+    </view>
+  </block>
+
+  <button class='guide-button' type='primary' bindtap='gotoTest'>去测试</button>
+</view>

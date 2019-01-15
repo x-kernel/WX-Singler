@@ -1,0 +1,12 @@
+<view class="mycontainer">
+  <text>写字页面</text>
+  <view class='test-text-block'>
+    <text class='test-text-hint-default'>浪</text>
+  </view>
+  <button class="guide-button" type='primary' bindtap='getTestResult'>写好了，开始测试</button>
+  <block wx:for="{{contentResion}}" data-item="item">
+    <view class='test-text-parent'>
+      <text class='test-text-default'>{{item}}         </text>
+    </view>
+  </block>
+</view>

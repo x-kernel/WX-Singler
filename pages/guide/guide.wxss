@@ -1,0 +1,24 @@
+.guide-text-parent{
+  margin-top: 16px; 
+}
+.guide-text-default{
+  padding: 4px;
+  font-size: 18px;
+  justify-content: center;/*水平居中*/
+  color: #fff;
+  background-color: #80ffffff;
+  border-radius:4px; 
+}
+.guide-text{
+  margin-top: 20px;
+  font-size: 24px;
+  flex-direction: column;
+  align-items: center;/*垂直居中*/
+  justify-content: center;/*水平居中*/
+  color: #fff;
+}
+.guide-button {
+  margin-top: 40px;
+  align-items: baseline;
+  width: 200px;
+}

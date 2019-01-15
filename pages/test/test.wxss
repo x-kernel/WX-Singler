@@ -1,0 +1,40 @@
+/*
+*模拟写字板的样式
+*/
+.test-text-block{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: 120px;
+  border-color: #ffff00;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 10px;
+  margin: 10px;
+}
+/*
+*测试结果text的父view
+*/
+.test-text-parent{
+  margin-top: 16px; 
+}
+/*
+*模拟用户的写的文字
+*/
+.test-text-hint-default{
+  font-size: 40px;
+  color: #fff;
+}
+/*
+*模拟每一条测试结果
+*/
+.test-text-default{
+  padding: 4px;
+  font-size: 18px;
+  justify-content: center;/*水平居中*/
+  color: #fff;
+  background-color: #80ffffff;
+  border-radius:4px; 
+}

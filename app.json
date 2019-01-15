@@ -1,0 +1,14 @@
+{
+  "pages":[
+    "pages/guide/guide",
+    "pages/test/test",
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "智能测字",
+    "navigationBarTextStyle":"black"
+  }
+}
