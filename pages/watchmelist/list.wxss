@@ -1,4 +1,4 @@
-/*整个页面的配置*/
+/* pages/watchmelist/list.wxss */
 .wrapper {
   width: 100%;
   height: 95vh;
@@ -7,125 +7,43 @@
   align-items: center;
   flex-direction: column;
 }
-/*顶部文字的父布局*/
-.guide-text-top-parent {
-  width: 466rpx;
-  height: 60rpx;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  background-color: #fff;
-  border-bottom-left-radius: 32rpx;
-  border-bottom-right-radius: 32rpx;
-}
 
-/*顶部文字*/
-.guide-text-top {
-  font-size: 26rpx;
-  color: #d35c5c;
+.tab-right {
+    width: 90%;
+    margin: 20rpx auto;
+    height: 90%;
 }
-
-/*获取授权文字*/
-.guide-text-getusersure {
-  margin-top: 100rpx;
-  margin-bottom: 100rpx;
-  font-size: 36rpx;
-  color: #fff;
+.content-item {
+    height: 100rpx;
+    border-bottom: 1rpx solid #000;
+    width: 95%;
 }
-/*用户信息*/
-.userinfo {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.avater {
+    height: 50rpx;
+    width: 50rpx;
+    border-radius: 100rpx;
+    margin-top: 25rpx;
+    float: left;
 }
-/*用户头像*/
-.userinfo-avatar {
-  width: 128rpx;
-  height: 128rpx;
-  margin: 20rpx;
-  border-radius: 50%;
+.name {
+    font-size: 26rpx;
+    float: left;
+    line-height: 100rpx;
+    color: #fff;
+    margin-left: 20rpx;
+    width: 40%;
+    height:100%;
+    overflow: hidden;
 }
-/*用户昵称*/
-.userinfo-nickname {
-  color: #fff;
-}
-
-/*单身十大罪状图片*/
-.guide-image-bg-title-parent {
-  margin-top: 10rpx;
-}
-/*单身十大罪状图片*/
-.guide-image-bg-title {
-  width: 694rpx;
-  height: 210rpx;
-}
-/*单身原因区域图片*/
-.guide-text-block-parent{
-  margin-top: 60rpx;
-  display: none;
-  flex-direction: row;/*从左到右水平方向为主轴*/
-  justify-content: center;
-  flex-wrap: wrap;/*自动换行*/
-}
-
-.guide-text-parent {
-  height: 96rpx;
-  display: flex;
-  margin: 10rpx;
-  align-items: center;
-  justify-content: center;
-}
-
-.guide-text-default {
-  height: 50rpx;
-  padding: 4px;
-  font-size: 32rpx;
-  justify-content: center; /*水平居中*/
-  color: #000;
-  background-color: #fff;
-  border-radius: 10rpx;
-  border-color: #000;
-  border-style: solid;
-  border-width: medium;
-}
-
-.guide-text {
-  margin-top: 20px;
-  font-size: 30rpx;
-  flex-direction: column;
-  align-items: center; /*垂直居中*/
-  justify-content: center; /*水平居中*/
-  color: #fff;
-}
-.guide-button-gotosure {
-  background-color: #fff;
-  width: 280rpx;
-  border: 4rpx solid #f8e71c;
-  overflow: hidden;
-  font-size: 36rpx;
-  vertical-align: middle;
-  text-align: center;
-}
-.guide-view-gototest-parent{
-  margin-top: 20rpx;
-}
-/*去测试图片按钮*/
-.guide-image-bg-gototest {
-  width: 360rpx;
-  height: 400rpx;
-}
-.guide-button-gototest {
-  display: none;
-  background-color: #fff;
-  width: 436rpx;
-  border: 4rpx solid #000;
-  overflow: hidden;
-  font-size: 34rpx;
-  vertical-align: middle;
-  text-align: center;
+.time {
+    width: 180rpx;
+    font-size: 26rpx;
+    float: right;
+    line-height: 100rpx;
+    color: #fff;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 page {

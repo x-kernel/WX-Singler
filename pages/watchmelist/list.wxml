@@ -1,0 +1,13 @@
+<!--pages/watchmelist/list.wxml-->
+<view class='wrapper'>
+
+  <scroll-view class="tab-right" scroll-y style="height: 90%;" scroll-top="{{scrollTop}}" >
+    <block wx:for='{{watchedInfo}}' wx:for-item='item'>
+      <view class='content-item'>
+        <image src='{{item.headurl}}' class='avater'></image>
+        <text class='name'>{{item.nickName}}</text>
+        <text class='time'>{{item.createTime}}</text>
+      </view>
+    </block>
+  </scroll-view>
+</view>

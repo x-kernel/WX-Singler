@@ -1,0 +1,15 @@
+<!--pages/usercenter/center.wxml-->
+<view class='wrapper'>
+  <view class="userinfo">
+    <block>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{nickName}}</text>
+    </block>
+  </view>
+
+  <text class='goto-result' bindtap='gotoResult'>  查看测试结果 ></text>
+
+  <button class='watch_btn' type='primary' bindtap='gotoWatch'>{{watchedNum}}人看了我</button>
+
+  
+</view>

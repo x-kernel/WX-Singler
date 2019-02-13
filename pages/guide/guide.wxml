@@ -1,11 +1,37 @@
-<view class="mycontainer">
-  <text>欢迎引导页面（一个字测你单身原因）</text>
+<view class='wrapper'>
+  <!--顶部文字-->
+  <view class='guide-text-top-parent'>
+    <text class='guide-text-top'>{{title}}</text>
+  </view>
+  <view class="userinfo">
+    <block wx:if="{{!hasUserInfo && canIUse}}">
+      <view class='guide-image-bg-title-parent'>
+        <image class="guide-image-bg-title" src='../../images/big_title.png' mode='aspectFit'></image>
+      </view>
+      <text class='guide-text-getusersure'>AI脱单需要你的头像和昵称</text>
+      <button class='guide-button-gotosure' open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 去授权 </button>
 
-  <block wx:for="{{defaultResion}}" data-item="item">
-    <view class='guide-text-parent' >
-      <text class='guide-text-default'>{{item}}</text>
-    </view>
-  </block>
+    </block>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
 
-  <button class='guide-button' type='primary' bindtap='gotoTest'>去测试</button>
+      <view class='guide-image-bg-title-parent'>
+        <image class="guide-image-bg-title" src='../../images/big_title.png' mode='aspectFit'></image>
+      </view>
+      <view class='guide-view-gototest-parent'>
+        <button class='guide-button-gototest' bindtap='gotoTest'>{{BtText}}</button>
+        <image class='guide-image-bg-gototest' src='../../images/bt_gototest.png' mode='aspectFit' bindtap='gotoTest'></image>
+      </view>
+      <view class='guide-text-block-parent'>
+        <block class='guide-text-block-parent' wx:for="{{defaultResion}}" data-item="item">
+          <view class='guide-text-parent'>
+            <text class='guide-text-default'>{{item}}</text>
+          </view>
+        </block>
+      </view>
+
+      
+    </block>
+  </view>
 </view>

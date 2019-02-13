@@ -1,14 +1,18 @@
 {
-  "pages":[
+  "pages": [
     "pages/guide/guide",
-    "pages/test/test",
     "pages/index/index",
+    "pages/handwriting/handwriting",
+    "pages/poster/index",
+    "pages/result/result",
+    "pages/usercenter/center",
+    "pages/watchmelist/list",
     "pages/logs/logs"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
+  "window": {
+    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "智能测字",
-    "navigationBarTextStyle":"black"
+    "navigationBarTitleText": "AI脱单",
+    "navigationBarTextStyle": "black"
   }
 }

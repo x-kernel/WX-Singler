@@ -1,0 +1,44 @@
+<view class='wrapper'>
+  <view class='test-text-top-parent'>
+    <text class='test-text-top'>{{title}}</text>
+  </view>
+
+  <block wx:if="{{!hasUserInfo && canIUse}}">
+    <view class='test-image-bg-title-parent'>
+      <image class="test-image-bg-title" src='../../images/big_title.png' mode='aspectFit'></image>
+    </view>
+    <text class='guide-text-getusersure'>AI脱单需要你的头像和昵称</text>
+    <button class='guide-button-gotosure' open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 去授权 </button>
+  </block>
+
+  <block wx:else>
+    <view class="userinfo">
+      <block>
+        <image bindtap="bindViewTap" class="userinfo-avatar" src="{{avatarUrl}}" mode="cover"></image>
+        <text class="userinfo-nickname">{{nickName}}</text>
+      </block>
+    </view>
+
+    <view class='test-image-bg-title-parent'>
+      <image class="test-image-bg-title" src='../../images/big_title.png' mode='aspectFit'></image>
+    </view>
+    <view class='test-text-block-parent'>
+      <block wx:for="{{defaultResion}}" data-item="item">
+        <view class='test-text-parent'>
+          <text class='test-text-default'>{{item}}</text>
+        </view>
+      </block>
+    </view>
+
+    <view class='test-bottom-view'>
+      <block wx:if="{{isFromTest}}">
+        <button class='test-bottom-view-button' open-type='share'>给朋友瞅瞅</button>
+        <button class='test-bottom-view-button' bindtap='savePic'>生成海报</button>
+      </block>
+      <block wx:else>
+        <button class='test-bottom-view-button' bindtap='gotoWish' hidden='true'>吐槽一番</button>
+        <button class='test-bottom-view-button' bindtap='gotoTest'>我也要测</button>
+      </block>
+    </view>
+  </block>
+</view>

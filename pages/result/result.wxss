@@ -8,7 +8,7 @@
   flex-direction: column;
 }
 /*顶部文字的父布局*/
-.guide-text-top-parent {
+.test-text-top-parent {
   width: 466rpx;
   height: 60rpx;
   display: flex;
@@ -21,11 +21,10 @@
 }
 
 /*顶部文字*/
-.guide-text-top {
+.test-text-top {
   font-size: 26rpx;
   color: #d35c5c;
 }
-
 /*获取授权文字*/
 .guide-text-getusersure {
   margin-top: 100rpx;
@@ -33,10 +32,18 @@
   font-size: 36rpx;
   color: #fff;
 }
+.guide-button-gotosure {
+  background-color: #fff;
+  width: 280rpx;
+  border: 4rpx solid #f8e71c;
+  overflow: hidden;
+  font-size: 36rpx;
+  vertical-align: middle;
+  text-align: center;
+}
+
 /*用户信息*/
 .userinfo {
-  width: 100%;
-  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -54,75 +61,67 @@
 }
 
 /*单身十大罪状图片*/
-.guide-image-bg-title-parent {
-  margin-top: 10rpx;
+.test-image-bg-title-parent {
+  position: absolute;
+  margin-top: 220rpx;
 }
 /*单身十大罪状图片*/
-.guide-image-bg-title {
+.test-image-bg-title {
   width: 694rpx;
   height: 210rpx;
 }
+
 /*单身原因区域图片*/
-.guide-text-block-parent{
-  margin-top: 60rpx;
-  display: none;
+.test-text-block-parent{
+  margin-top: 200rpx;
+  display: flex;
   flex-direction: row;/*从左到右水平方向为主轴*/
   justify-content: center;
   flex-wrap: wrap;/*自动换行*/
 }
 
-.guide-text-parent {
+.test-text-parent {
   height: 96rpx;
   display: flex;
-  margin: 10rpx;
+  margin: 8rpx;
   align-items: center;
   justify-content: center;
 }
 
-.guide-text-default {
-  height: 50rpx;
+.test-text-default {
   padding: 4px;
-  font-size: 32rpx;
+  font-size: 36rpx;
   justify-content: center; /*水平居中*/
   color: #000;
-  background-color: #fff;
+  background-color: #f8e71c;
   border-radius: 10rpx;
-  border-color: #000;
-  border-style: solid;
-  border-width: medium;
+  border: 4rpx solid #000;
 }
 
-.guide-text {
+.test-text {
   margin-top: 20px;
-  font-size: 30rpx;
+  font-size: 24px;
   flex-direction: column;
   align-items: center; /*垂直居中*/
   justify-content: center; /*水平居中*/
   color: #fff;
 }
-.guide-button-gotosure {
+.test-bottom-view{
+  width: 100%;
+  height:110rpx; 
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.test-bottom-view-button {
   background-color: #fff;
-  width: 280rpx;
-  border: 4rpx solid #f8e71c;
-  overflow: hidden;
-  font-size: 36rpx;
-  vertical-align: middle;
-  text-align: center;
-}
-.guide-view-gototest-parent{
-  margin-top: 20rpx;
-}
-/*去测试图片按钮*/
-.guide-image-bg-gototest {
-  width: 360rpx;
-  height: 400rpx;
-}
-.guide-button-gototest {
-  display: none;
-  background-color: #fff;
-  width: 436rpx;
-  border: 4rpx solid #000;
-  overflow: hidden;
+  border-radius: 8rpx;
+  border-color: #000;
+  border-style: solid;
+  border-width: medium;
   font-size: 34rpx;
   vertical-align: middle;
   text-align: center;
