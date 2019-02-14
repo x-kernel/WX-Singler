@@ -160,7 +160,7 @@ Page({
         })
         //如果从非测试页面进来，并且传进来的openid 和本地的openid一致，进入个人中心
         const openid = wx.getStorageSync('openid')
-        if (this.mType != 0 && mOpenid == openid) {
+        if (this.mType != 0 && this.mOpenid == openid) {
           wx.redirectTo({
             url: '../usercenter/center',
           })
@@ -182,7 +182,7 @@ Page({
           })
           //如果从非测试页面进来，并且传进来的openid 和本地的openid一致，进入个人中心
           const openid = wx.getStorageSync('openid')
-          if (this.mType != 0 && mOpenid == openid) {
+          if (this.mType != 0 && this.mOpenid == openid) {
             wx.redirectTo({
               url: '../usercenter/center',
             })
