@@ -27,7 +27,7 @@
 }
 /*获取授权文字*/
 .guide-text-getusersure {
-  margin-top: 100rpx;
+  margin-top: 450rpx;
   margin-bottom: 100rpx;
   font-size: 36rpx;
   color: #fff;
@@ -125,6 +125,11 @@
   font-size: 34rpx;
   vertical-align: middle;
   text-align: center;
+}
+
+.test-test{
+  font-size: 20rpx;
+  color: #fff;
 }
 
 page {

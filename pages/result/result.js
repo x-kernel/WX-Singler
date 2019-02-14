@@ -126,11 +126,12 @@ Page({
     if (options.openid) {
       this.mOpenid = options.openid;
     }
+
     //用户扫描小程序码
     if (options.scene) {
       let scene = decodeURIComponent(options.scene);
+      this.mOpenid = scene.split("&")[0];
       this.mType = 2;
-      this.mOpenid = options.scene.split("&")[0];
     }
 
     if (app.globalData.userInfo) {
@@ -140,6 +141,9 @@ Page({
       })
       //如果从非测试页面进来，并且传进来的openid 和本地的openid一致，进入个人中心
       const openid = wx.getStorageSync('openid')
+      console.log('11111：' + this.mType);
+      console.log('11111：' + this.mOpenid);
+      console.log('11111：' + openid);
       if (this.mType != 0 && this.mOpenid == openid) {
         wx.redirectTo({
           url: '../usercenter/center',

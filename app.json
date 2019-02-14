@@ -4,9 +4,9 @@
     "pages/index/index",
     "pages/handwriting/handwriting",
     "pages/poster/index",
-    "pages/result/result",
     "pages/usercenter/center",
     "pages/watchmelist/list",
+    "pages/result/result",
     "pages/logs/logs"
   ],
   "window": {
