@@ -6,7 +6,7 @@
       <view class='content-item'>
         <image src='{{item.headurl}}' class='avater'></image>
         <text class='name'>{{item.nickName}}</text>
-        <text class='time'>{{item.createTime}}</text>
+        <text class='time'>{{item.formatTime}}</text>
       </view>
     </block>
   </scroll-view>

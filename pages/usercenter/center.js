@@ -7,7 +7,7 @@ Page({
    */
   watchedInfo:[],//多少人看了我的列表信息
   data: {
-    nickName: '康',
+    nickName: '康仔',
     avatarUrl: '',
     watchedNum:0,
   },

@@ -15,8 +15,8 @@
 }
 .content-item {
     height: 100rpx;
-    border-bottom: 1rpx solid #000;
-    width: 95%;
+    border-bottom: 1rpx solid #f8e71c;
+    width: 100%;
 }
 .avater {
     height: 50rpx;
@@ -31,12 +31,11 @@
     line-height: 100rpx;
     color: #fff;
     margin-left: 20rpx;
-    width: 40%;
+    width: 30%;
     height:100%;
     overflow: hidden;
 }
 .time {
-    width: 180rpx;
     font-size: 26rpx;
     float: right;
     line-height: 100rpx;

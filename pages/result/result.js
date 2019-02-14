@@ -3,6 +3,7 @@ var app = getApp();
 
 Page({
   mOpenid: '', //传递的参数 用户id
+  mType: 0, //跳转过来的类型
   /**
    * 页面的初始数据
    */
@@ -79,7 +80,7 @@ Page({
       console.log(app.globalData.userInfo)
 
       const openid = wx.getStorageSync('openid')
-
+      
       wx.request({
         url: 'https://www.xkhome.online/uploadUserMsg',
         data: {
@@ -111,10 +112,12 @@ Page({
   onLoad: function(options) {
     //type: 0（测试页面跳转）1（转发）2（小程序码）
     if (options.type == 0) {
+      this.mType = 0;
       this.setData({
         isFromTest: true
       });
     } else {
+      this.mType = 1;
       this.setData({
         isFromTest: false
       });
@@ -126,6 +129,7 @@ Page({
     //用户扫描小程序码
     if (options.scene) {
       let scene = decodeURIComponent(options.scene);
+      this.mType = 2;
       this.mOpenid = options.scene.split("&")[0];
     }
 
@@ -136,7 +140,7 @@ Page({
       })
       //如果从非测试页面进来，并且传进来的openid 和本地的openid一致，进入个人中心
       const openid = wx.getStorageSync('openid')
-      if (options.type != 0 && this.mOpenid == openid) {
+      if (this.mType != 0 && this.mOpenid == openid) {
         wx.redirectTo({
           url: '../usercenter/center',
         })
@@ -156,7 +160,7 @@ Page({
         })
         //如果从非测试页面进来，并且传进来的openid 和本地的openid一致，进入个人中心
         const openid = wx.getStorageSync('openid')
-        if (options.type != 0 && mOpenid == openid) {
+        if (this.mType != 0 && mOpenid == openid) {
           wx.redirectTo({
             url: '../usercenter/center',
           })
@@ -178,7 +182,7 @@ Page({
           })
           //如果从非测试页面进来，并且传进来的openid 和本地的openid一致，进入个人中心
           const openid = wx.getStorageSync('openid')
-          if (options.type != 0 && mOpenid == openid) {
+          if (this.mType != 0 && mOpenid == openid) {
             wx.redirectTo({
               url: '../usercenter/center',
             })
